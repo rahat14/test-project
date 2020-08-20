@@ -9,7 +9,7 @@ import retrofit2.http.HeaderMap
 
 interface ApiInterface {
     @GET("getSurvey")
-  //  fun callApiForWeatherInfo(@Query("id") cityId: Int): Call<WeatherInfoResponse>
+
     fun callApiForData(
         @HeaderMap headers: Map<String, String>
     ): Call<List<QustionModel>>

@@ -17,7 +17,6 @@ interface answerDao {
     @Query("SELECT * from answer_table ORDER BY id ASC")
     fun getAnswer(): LiveData<List<AnswersModel>>
 
-//    @Query("DELETE FROM answer_table")
-//    fun deleteAll()
+
 
 }

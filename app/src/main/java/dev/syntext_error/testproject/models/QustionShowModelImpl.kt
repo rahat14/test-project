@@ -22,7 +22,7 @@ class QustionShowModelImpl(private  val  context :  Context): QustionShowModel {
             override fun onResponse(call: Call<List<QustionModel>>, response: Response<List<QustionModel>>) {
                 if (response.body() != null && response.code()==200)
                 {
-                    callback.onRequestSuccess(response.body()!!) //let presenter know the weather information data
+                    callback.onRequestSuccess(response.body()!!) //let presenter know the  information data
                 }
                 else
                     callback.onRequestFailed(response.message()) //let presenter know about failure
