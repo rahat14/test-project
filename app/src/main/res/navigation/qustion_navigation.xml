@@ -1,0 +1,51 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qustion_navigation"
+    app:startDestination="@id/mcqFragment">
+
+    <fragment
+        android:id="@+id/mcqFragment"
+        android:name="dev.syntext_error.testproject.views.fragments.mcqFragment"
+        android:label="fragment_mcq"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        tools:layout="@layout/fragment_mcq" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mcqFragment_to_otherQusFragment"
+            app:destination="@id/otherQusFragment" />
+        <argument
+            android:name="bolResponse"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="dropDownResponse"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherQusFragment"
+        android:name="dev.syntext_error.testproject.views.fragments.otherQusFragment"
+        android:label="fragment_other_qus"
+        tools:layout="@layout/fragment_other_qus" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_otherQusFragment_to_done_fragment"
+            app:destination="@id/done_fragment" />
+    </fragment>
+    <fragment
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        android:id="@+id/done_fragment"
+        android:name="dev.syntext_error.testproject.views.fragments.done_fragment"
+        android:label="done_fragment" />
+</navigation>

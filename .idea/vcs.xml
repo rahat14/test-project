@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Nephilim/Chakri" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/community app/CommunityApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/office/RoomDemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/office/one_shop_vendor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/office/oneshop-android" vcs="Git" />
+  </component>
+</project>
